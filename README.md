@@ -1,6 +1,6 @@
-# DarkThemeFoxFix.user.css
+# DarkThemeFoxFix
 
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/MAL%20-%20DeepDark.png)
+![alt tag](https://raw.githubusercontent.com/RaitaroH/DarkThemeFoxFix/master/Images/FirefoxFix.png)
 Fix the annoying issues firefox/waterfox has with dark themes under linux
 
 This is a global theme.
