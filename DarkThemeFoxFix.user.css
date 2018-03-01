@@ -1,0 +1,205 @@
+/* ==UserStyle==
+@name DarkThemeFoxFix
+@namespace github.com/RaitaroH/DarkThemeFoxFix
+@homepageURL https://github.com/RaitaroH/DarkThemeFoxFix
+@version 1.0.1
+@updateURL https://rawgit.com/RaitaroH/DarkThemeFoxFix/master/DarkThemeFoxFix.user.css
+@description Fix the annoying issues firefox/waterfox has with dark themes under linux
+@author RaitaroH
+@license GNU-V3.0
+
+@advanced dropdown colors "Choose what fits you best" {
+
+  black-on-white "Black text on white background" <<<EOT
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']):not([type='button']):not(.button):not(.btn):not([id*=button]),
+textarea, select
+{
+	background-color: white;
+	color: black;
+}
+
+#downloads-indicator-counter {
+    color: black;
+}EOT;
+
+  white-on-black "White text on black background" <<<EOT
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']):not([type='button']):not(.button):not(.btn):not([id*=button]),
+textarea, select
+{
+	background-color: black;
+	color: white;
+}
+
+#downloads-indicator-counter {
+    color: white;
+}EOT;
+
+  transp_white "Transparent background with white text" <<<EOT
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']):not([type='button']):not(.button):not(.btn):not([id*=button]),
+textarea, select
+{
+	background-color: transparent;
+	color: white;
+}
+
+#downloads-indicator-counter {
+    color: white;
+}EOT;
+
+  transp_black "Transparent background with black text" <<<EOT
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']):not([type='button']):not(.button):not(.btn):not([id*=button]),
+textarea, select
+{
+	background-color: transparent;
+	color: black;
+}
+
+#downloads-indicator-counter {
+    color: black;
+}EOT;
+
+  colorscheme1 "Follow theme colors light" <<<EOT
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']):not([type='button']):not(.button):not(.btn):not([id*=button]),
+textarea, select
+{
+	background-color: var(--hover-background);
+	color: var(--main-text);
+}
+
+#downloads-indicator-counter {
+    color: var(--main-text);
+}EOT;
+
+  colorscheme2 "Follow theme colors darker" <<<EOT
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']):not([type='button']):not(.button):not(.btn):not([id*=button]),
+textarea, select
+{
+	background-color: var(--main-background);
+	color: var(--main-text);
+}
+
+#downloads-indicator-counter {
+    color: var(--main-text);
+}EOT;
+
+  colorscheme3 "Follow theme colors darker with colored text" <<<EOT
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']):not([type='button']):not(.button):not(.btn):not([id*=button]),
+textarea, select
+{
+	background-color: var(--main-background);
+	color: var(--main-color);
+}
+
+#downloads-indicator-counter {
+    color: var(--main-color);
+}EOT;
+
+  colorscheme3 "Follow theme colors lighter with colored text" <<<EOT
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']):not([type='button']):not(.button):not(.btn):not([id*=button]),
+textarea, select
+{
+	background-color: var(--main-background);
+	color: var(--main-color);
+}
+
+#downloads-indicator-counter {
+    color: var(--main-color);
+}EOT;
+
+}
+
+@preprocessor uso
+@var select mainBackground 'Darker background color' {
+	"DeepDark": "#111111",
+	"BreezeDark": "#232629",
+	"Vertex Dark": "#2B2B2C",
+	"Arc Dark": "#343944",
+	"Firefox Dark": "#272B35",
+	"Firefox57": "#0C0C0D",
+	"Discord": "#1E2124",
+	"YouTubeDark": "#111111",
+	"Mint-Y-Dark": "#2F2F2F",
+	"9anime": "#0B0A0D",
+	"Black&White": "#000000",
+	"Yellow_petrocompletions": "#141414",
+	"Yellow2": "#0a0800",
+	"Ubuntu_grey": "#312D2A",
+	"Ubuntu_purple": "#2C071A",
+	"Orange": "#0a0400",
+	"Jisho_夜明け": "#332222"
+}
+@var select hoverBackground 'Lighter background color' {
+	"DeepDark": "#232323",
+	"BreezeDark": "#31363b",
+	"Vertex Dark": "#515254",
+	"Arc Dark": "#414A59",
+	"Firefox Dark": "#353A44",
+	"Firefox57": "#323234",
+	"Discord": "#484B51",
+	"YouTubeDark": "#343434",
+	"Mint-Y-Dark": "#404040",
+	"9anime": "#1E1C25",
+	"Black&White": "#0f0f0f",
+	"Yellow_petrocompletions": "#353838",
+	"Yellow2": "#0f0d05",
+	"Ubuntu_grey": "#59564D",
+	"Ubuntu_purple": "#520D30",
+	"Orange": "#110903",
+	"Jisho_夜明け": "#863B2F"
+}
+@var select mainText 'Mainly white text color' {
+	"DeepDark": "#eff0f1",
+	"BreezeDark": "#eff0f1",
+	"Vertex Dark": "#F3F3F5",
+	"Arc Dark": "#C1C8D1",
+	"Firefox Dark": "#E3EEF9",
+	"Firefox57": "#F9F9FA",
+	"Discord": "#FFFFFF",
+	"YouTubeDark": "#E1E1E1",
+	"Mint-Y-Dark": "#FFFFFF",
+	"9anime": "#B4B4B4",
+	"Black&White": "#b4b4b4",
+	"Yellow_petrocompletions": "#EFF0F1",
+	"Yellow2": "#fffdf5",
+	"Ubuntu_grey": "#F2F1EF",
+	"Ubuntu_purple": "#F2F1EF",
+	"Orange": "#fff9f5",
+	"Jisho_夜明け": "#EFB26C"
+}
+@var select mainColor 'Colored text' {
+	"DeepDark": "#00adee",
+	"BreezeDark": "#3DAEE9",
+	"Vertex Dark": "#4080fb",
+	"Arc Dark": "#5294E2",
+	"Firefox Dark": "#5675B9",
+	"Firefox57": "#4080FB",
+	"Discord": "#7289DA",
+	"YouTubeDark": "#E52117",
+	"Mint-Y-Dark": "#9AB87C",
+	"9anime": "#723f8c",
+	"Black&White": "#ffffff",
+	"Yellow_petrocompletions": "#FFC700",
+	"Yellow2": "#FFC700",
+	"Ubuntu_grey": "#EF7847",
+	"Ubuntu_purple": "#EF7847",
+	"Orange": "#ff6905",
+	"Jisho_夜明け":  "#EF7D6C"
+}
+
+==/UserStyle== */
+
+/* i really want this to be global */
+
+/*Main color variables*/
+	:root
+	{
+		/*User colors*/
+		--main-color: /*[[mainColor]]*/;
+		--main-background: /*[[mainBackground]]*/;
+		--second-background: /*[[secondBackground]]*/;
+		--hover-background: /*[[hoverBackground]]*/;
+		--main-text: /*[[mainText]]*/;
+		--dimer-text: /*[[dimerText]]*/;
+	}
+
+/*[[colors]]*/ 
