@@ -9,6 +9,6 @@ Also, credit where credit is due for the color palettes down bellow. ([FT DeepDa
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-285959.svg)](https://raw.githubusercontent.com/RaitaroH/DarkThemeFoxFix/master/DarkThemeFoxFix.user.css)
 
-Theme as a userstyle [here]().
+Theme as a userstyle [here](https://openusercss.org/theme/5a983fc070bc4a0b00903b2c).
 
 ### **You can also install all my themes at once from [here](https://github.com/RaitaroH/Import-All-Deepdark).**
